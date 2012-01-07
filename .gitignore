@@ -1,4 +1,4 @@
-nbuild-stamp
+build-stamp
 *.log
 *.substvars
 patch-stamp
