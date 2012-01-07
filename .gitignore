@@ -11,7 +11,7 @@ debian/rancid
 Makefile
 Makefile.in
 aclocal.m4
-autom4te.cache/
+autom4te.cache
 bin/.deps
 bin/Makefile
 bin/agmrancid
