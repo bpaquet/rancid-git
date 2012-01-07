@@ -28,6 +28,8 @@ build-stamp: patch-stamp
 	dh_testdir
 	aclocal
 	autoconf
+	autoheader
+	automake
 
 	env CFLAGS="$(OPTIMIZE) -g" \
 	   ./configure \

@@ -1,5 +1,4 @@
-Makefile.in
-build-stamp
+nbuild-stamp
 *.log
 *.substvars
 patch-stamp
@@ -10,6 +9,7 @@ debian/rancid-util
 debian/rancid.postrm.debhelper
 debian/rancid
 Makefile
+Makefile.in
 aclocal.m4
 autom4te.cache/
 bin/.deps
@@ -76,6 +76,7 @@ etc/lg.conf.sample
 etc/rancid.conf.sample
 include/Makefile
 include/config.h
+include/config.h.in
 include/stamp-h1
 man/Makefile
 man/lg.conf.5
