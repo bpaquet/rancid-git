@@ -1,6 +1,6 @@
 #! /usr/bin/expect --
 ##
-## $Id: clogin.in,v 1.94 2006/04/28 15:37:40 heas Exp $
+## $Id: wlogin.in,v 1.94 2006/04/28 15:37:40 heas Exp $
 ##
 ## Copyright (C) 1997-2004 by Terrapin Communications, Inc.
 ## All rights reserved.
@@ -571,7 +571,7 @@ proc run_commands { prompt command } {
 	    # subsequent expects to handle everything as normal.
 	    set command "set logging session disable;$command"
 	} else {
-	    send "term length 0\r"
+	    send "config paging disable\r"
 	}
 	# escape any parens in the prompt, such as "(enable)"
 	regsub -all {[)(]} $prompt {\\&} reprompt
@@ -849,7 +849,7 @@ foreach router [lrange $argv $i end] {
 	    send "set length 0\r"
 	    send "set logging session disable\r"
 	} else {
-	    send "term length 0\r"
+	    send "config paging disable\r"
 	}
 	expect -re $prompt	{}
 	source $sfile
