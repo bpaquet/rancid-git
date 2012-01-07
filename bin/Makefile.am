@@ -50,7 +50,7 @@ AUTOMAKE_OPTIONS=foreign
 
 bin_PROGRAMS = hpuifilter
 bin_SCRIPTS = agmrancid alogin arancid arrancid avologin avorancid blogin \
-	brancid cat5rancid clogin control_rancid cssrancid elogin erancid \
+	brancid cat5rancid clogin cssrancid elogin erancid \
 	f5rancid f10rancid flogin fnlogin fnrancid francid hlogin hrancid \
 	htlogin htrancid jerancid jlogin jrancid mrancid mrvlogin mrvrancid \
 	nlogin nrancid nslogin nsrancid nxrancid par prancid rancid-fe rancid \
@@ -91,6 +91,7 @@ YFLAGS = -d
 auto_edit = sed \
 	-e 's,@bindir\@,$(bindir),g' \
 	-e 's,@prefix\@,$(prefix),g' \
+	-e 's,@exec_prefix\@,$(exec_prefix),g' \
 	-e 's,@localstatedir\@,$(localstatedir),g' \
 	-e 's,@sysconfdir\@,$(sysconfdir),g' \
 	-e 's,@EXPECT_PATH\@,$(EXPECT_PATH),g' \
