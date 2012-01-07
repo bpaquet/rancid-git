@@ -69,6 +69,8 @@ bin/trancid
 bin/xrancid
 bin/xrrancid
 bin/zrancid
+bin/wlogin
+bin/ciscowlc5
 config.status
 configure
 etc/Makefile
