@@ -1,3 +1,9 @@
+rancid (2.3.6-8~bpa1) precise; urgency=low
+
+  * Compatibility with cisco 5508 wifi controller
+
+ -- Bertrand Paquet <bertrand.paquet@gmail.com>  Tue, 12 Nov 2013 15:24:13 +0000
+
 rancid (2.3.6-8) unstable; urgency=low
 
   * add 'show vlan' command to catos
